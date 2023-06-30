@@ -9,7 +9,7 @@ const RemoveTodo = ({perTodo,setAddTodoList,addTodoList}) => {
 
   return (
     <div>
-      <MdDelete onClick={removeHandler}/>
+      <MdDelete onClick={removeHandler} size={30}/>
     </div>
   )
 }

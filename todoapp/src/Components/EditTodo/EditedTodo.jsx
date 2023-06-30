@@ -1,3 +1,5 @@
+import "./Edit.css"
+
 const EditedTodo = ({ addTodoList, setAddTodoList , id ,editedText,setEditedText}) => {
 
     const getEditTodo = (e) => {
@@ -9,9 +11,10 @@ const EditedTodo = ({ addTodoList, setAddTodoList , id ,editedText,setEditedText
         setAddTodoList(newAddTodolist)
     }
   return (
-    <form onSubmit={onSubmitHandler}>
-      <input type="text" onChange={getEditTodo} />
+    <form className="form-container" onSubmit={onSubmitHandler}>
+      <input autoFocus placeholder="Please enter edit text" type="text" className="edit-container" onChange={getEditTodo} />
     </form>
   );
 };
+
 export default EditedTodo;

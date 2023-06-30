@@ -13,7 +13,7 @@ const EditTodo = ({ addTodoList, setAddTodoList, id }) => {
 
   return (
     <div>
-      <MdModeEdit onClick={onClickHandler} />
+      <MdModeEdit onClick={onClickHandler} size={30} />
     </div>
   );
 };

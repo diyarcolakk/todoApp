@@ -1,21 +1,35 @@
+.todo-app-Header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .addTodo-container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  height: 100px;
-  gap: 1rem;
+  width: 100%;
+  height: 20vh;
+  gap: 7rem;
 }
 
 .add-container {
-  width: 40%;
+  width: 50%;
   height: 40%;
   border-radius: 10px;
+  outline: none;
+  text-align: center;
+  margin-left: 1rem;
+  border: 4px solid black;
+}
+
+.add-container:focus {
+  border: 4px solid green;
 }
 
 .btn {
   border-radius: 10px;
-  border: 2px solid red;
-  width: 12%;
+  border: 4px solid black;
+  width: 10%;
   height: 40%;
   cursor: pointer;
   background-color: white;
@@ -23,6 +37,6 @@
 
 .btn:hover {
   border-radius: 10px;
-  border: 2px solid red;
-  color: red;
+  border: 4px solid gray;
+  color: gray;
 }
