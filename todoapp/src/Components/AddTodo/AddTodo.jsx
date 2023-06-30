@@ -4,7 +4,7 @@ const AddTodo = ({setAddTodo,setAddTodoList,addTodo}) => {
   const onSubmitHandler = (e) => {
     e.preventDefault();
     if(addTodo !== ""){
-        setAddTodoList((pre) => [...pre,{todo:addTodo,id:new Date().getTime()}])
+        setAddTodoList((pre) => [...pre,{todo:addTodo,isEdited:false,id:new Date().getTime()}])
         setAddTodo("")
     }
   }

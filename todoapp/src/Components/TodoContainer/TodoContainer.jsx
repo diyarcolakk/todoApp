@@ -6,12 +6,13 @@ import { useState } from "react"
 const TodoContainer = () => {
   const [addTodo, setAddTodo] = useState("");
   const [addTodoList, setAddTodoList] = useState([]);
-  const [editTodo,setEditTodo] = useState(true)
+  const [editedText,setEditedText] = useState("")
+
   return (
     <>
         <div className="main-container">
             <AddTodo setAddTodo={setAddTodo} setAddTodoList={setAddTodoList} addTodo={addTodo} addTodoList={addTodoList}/>
-            <ShowTodo addTodoList={addTodoList}  setAddTodoList={setAddTodoList} editTodo={editTodo} setEditTodo={setEditTodo}/>
+            <ShowTodo addTodoList={addTodoList} setAddTodoList={setAddTodoList} setEditedText={setEditedText} editedText={editedText}/>
         </div>
     </>
   )
