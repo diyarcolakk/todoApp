@@ -1,0 +1,28 @@
+.addTodo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 1rem;
+}
+
+.add-container {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+}
+
+.btn {
+  border-radius: 10px;
+  border: 2px solid red;
+  width: 12%;
+  height: 40%;
+  cursor: pointer;
+  background-color: white;
+}
+
+.btn:hover {
+  border-radius: 10px;
+  border: 2px solid red;
+  color: red;
+}

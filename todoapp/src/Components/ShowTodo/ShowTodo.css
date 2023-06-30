@@ -1,0 +1,23 @@
+.showTodo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: space-around;
+  border: 1px solid black;
+  padding-bottom: 1rem;
+}
+
+.design-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.showTodo-container input {
+  width: 50%;
+  background-color: white;
+  border: 2px solid black;
+}
